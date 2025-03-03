@@ -8,8 +8,7 @@ from . import utils
 from .drawio_export_filter import action, prepare, finalize
 
 
-utils.set_logger(logging.DEBUG)
-#utils.set_logger(logging.WARNING)
+utils.set_logger(logging.WARNING)
 logger = utils.get_logger()
 
 
