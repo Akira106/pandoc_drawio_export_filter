@@ -23,7 +23,7 @@ DrawIOファイルを含むMarkdownをPandocでWordに変換するときに、�
 `drawio-desktop-headless`は、以下のコマンドでインストールできます。  
 
 ```shell-session
-$ dockre pull rlespinasse/drawio-desktop-headless
+$ docker pull rlespinasse/drawio-desktop-headless
 ```
   
 `rsvg-convert`は、本フィルタとは直接関係はありませんが、SVGファイルを含むMarkdownをPandocでWordに変換するときに必要になります。  
