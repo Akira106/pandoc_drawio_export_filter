@@ -5,7 +5,7 @@ import logging
 import panflute as pf
 
 from . import utils
-from .drawio_export_filter import action, prepare, finalize
+from .pandoc_drawio_export_filter import action, prepare, finalize
 
 
 utils.set_logger(logging.WARNING)
