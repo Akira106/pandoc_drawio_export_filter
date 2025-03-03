@@ -39,7 +39,7 @@ def finalize(doc):
 def _export_drawio(src: str, dst: str) -> Tuple[bool, None | str]:
     """Drawioの画像をPNGにエクスポートします"""
     cwd = os.getcwd()
-    cmd = f"docker run -it --ipc=host -w /data -v {cwd}:/data rlespinasse/drawio-desktop-headless -x -f png --scale 2.5 -o {dst} {src}"
+    cmd = f"docker run --rm -it --ipc=host -w /data -v {cwd}:/data rlespinasse/drawio-desktop-headless -x -f png --scale 2.5 -o {dst} {src}"
 
     out = subprocess.run(cmd, shell=True, check=True, capture_output=True, text=True).stdout
 
